@@ -7,6 +7,5 @@ cmd到达工作目录 cd /d d:\python work\learning_log
 python manage.py startapp 应用名称
 将应用名称添加到settings.py de INSTALLED_APPS中
 ## 3. 创建第一个页面
-![name][01]
-[01]: ./01.png
+![flow1](1.jng)
 ## 4. 配置urls
