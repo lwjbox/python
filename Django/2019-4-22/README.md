@@ -14,4 +14,17 @@ class Article(models.Model):
 ![flow1](3.png)
 ![flow1](4.png)
 ![flow1](5.png)
+```python
+from django.shortcuts import render
+from . import models
+
+
+def index(request):
+    article = models.Article.objects.get(pk=1)
+    return render(request, 'blog/index.html', {'article': article})
+```
 ![flow1](6.png)
+```html
+<h1>{{ article.title }}</h1>
+<p>{{ article.content }}</p>
+```
