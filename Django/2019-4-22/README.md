@@ -50,3 +50,7 @@ admin.site.register(Article)
 ```
 ## 2.4 admin总结
 admin超级用户的作用，管理数据库。
+
+![flow1](8.png)
+
+![flow1](9.png)
