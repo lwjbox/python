@@ -32,3 +32,21 @@ def index(request):
 
 ![flow1](7.png)
 
+# 2. admin超级用户
+## 2.1 创建超级用户admin
+工作目录下输入： python manage.py createsuperuser</br>
+用户名：yuji
+密码：liuwenjun
+## 2.2 将django的admin页面改为中文
+在settings.py中设为LANGUAGE_CODE = 'zh_Hans'
+## 2.3 配置admin
+注册模板：admin.py中
+admin.site.register(模型名称)
+```python
+from blog.models import Article
+
+admin.site.register(Article)
+
+```
+## 2.4 admin总结
+admin超级用户的作用，管理数据库。
