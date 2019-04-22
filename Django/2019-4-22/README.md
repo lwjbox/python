@@ -28,3 +28,7 @@ def index(request):
 <h1>{{ article.title }}</h1>
 <p>{{ article.content }}</p>
 ```
+运行成功！
+
+![flow1](7.png)
+
